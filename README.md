@@ -73,8 +73,6 @@ Stage 1 (Build)                    Stage 2 (Production)
 
 Ahora crearemos una simple aplicación "Hola Mundo" de Node.js y un Dockerfile para construirla (**Paso 2**). 
 
-¡Gracias por tus excelentes sugerencias! Son muy útiles para hacer la guía aún más clara y accesible, especialmente para principiantes. Vamos a incorporar tus sugerencias en la explicación. Aquí está la versión actualizada del **Paso 2** con las mejoras que mencionaste:
-
 ---
 
 ### **Paso 2: Crear un Dockerfile**
@@ -209,12 +207,6 @@ Aplicación Node.js -> Dockerfile -> Imagen Docker -> Contenedor Docker
 
 ---
 
-¡Gracias por el feedback y la sugerencia! Tienes toda la razón: es importante explicar cómo encontrar el `<container_id>` para que los principiantes no se sientan perdidos. Vamos a incorporar esa aclaración en el **Paso 6 (Limpieza)** para que la explicación sea aún más completa y fácil de seguir.
-
-Aquí está la versión actualizada con tu sugerencia:
-
----
-
 ### **Paso 3: Optimizar con Multi-Stage Builds**
 
 Ahora vamos a optimizar el Dockerfile utilizando **construcciones multi-etapa**. El objetivo es reducir el tamaño de la imagen final y mejorar la seguridad eliminando herramientas y archivos innecesarios.
@@ -222,8 +214,6 @@ Ahora vamos a optimizar el Dockerfile utilizando **construcciones multi-etapa**.
 Actualizaremos el Dockerfile para usar dos etapas:
 1. **Etapa de construcción (build):** Usaremos la imagen completa de `node:18` para instalar dependencias y compilar la aplicación.
 2. **Etapa de producción:** Usaremos una imagen más ligera (`node:18-alpine`) y copiaremos solo los archivos necesarios desde la etapa de construcción.
-
-Aquí está el Dockerfile optimizado:
 
 ```Dockerfile
 # Etapa 1: Construcción
